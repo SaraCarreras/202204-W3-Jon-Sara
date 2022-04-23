@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: not test specified\" && exit 1",
-        "sass": "sass -w scss/:css/",
         "sass:v": "sass --version",
+        "sass": "sass -w scss/:css/",
         "prepare": "husky install"
     },
     "keywords": [
