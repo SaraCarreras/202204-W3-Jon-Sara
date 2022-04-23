@@ -1,22 +1,36 @@
 # Challenge Sara y Jon
 
-1. Github - repo / Sara
-    1. Montar lo de Husky
+## TODO'S
+
+### Setup
+
+1. Github & Setup general
+    - [x] Repo de Sara y compartirlo
+    - [x] Instalar Husky
+        - [ ] Pendiente arreglar el fix de los mensajes de commit. Ver comentario abajo
+    - [x] Estructura de páginas inicial
+    - [ ] Instalar SASS
+        - [ ] Aprender bien la configuración
+        - [ ] Comprobar con Sara que a ella le va bien todo
+
+### Organización
+
 2. Planificación del trabajo
+
     1. Home Versión mobile / Header - Footer
+
         1. Header / Sara
         2. Footer / Jon
+
     2. Preparación de todo el proyecto
         1. Html pages
             1. home.html
             2. works.html
             3. about.html
-        2. Sass pages
-            1. variables, partials & extends
-            2. home.scss
-            3. works.scss
-            4. about.scss
-    3. Estudiar las inclinaciones
+
+_Sass pages_ 1. variables, partials & extends 2. home.scss 3. works.scss 4. about.scss
+
+_Estudiar las inclinaciones_ Ver pruebas hechas por Javier
 
 TREE STRUCTURE AND NOTES
 
@@ -36,6 +50,8 @@ TREE STRUCTURE AND NOTES
 -   [ ] Setup general de carpetas y organización
 -   [ ] Oswald 300? y OpenSans 300
 
+## INCIDENTES
+
 ### Problemas con Husky
 
 ```sh
@@ -48,3 +64,5 @@ hint: You can disable this warning with `git config advice.ignoredHook false`.
 
 <!-- TODO: Revisar esto. Lo dejo desactivado, pero es cutre. -->
 <!-- FIXME: Revisar esto. Lo dejo desactivado, pero es cutre. -->
+
+### Instalación
