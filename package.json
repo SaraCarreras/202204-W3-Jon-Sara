@@ -1,0 +1,22 @@
+{
+    "name": "web_sass",
+    "version": "1.0.0",
+    "description": "Aprendiendo Sass",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: not test specified\" && exit 1",
+        "sass": "sass -w scss/:css/",
+        "sass:v": "sass --version",
+        "prepare": "husky install"
+    },
+    "keywords": [
+        "SASS",
+        "CSS"
+    ],
+    "author": "Sara & Jon",
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "sass": "^1.50.1"
+    }
+}
