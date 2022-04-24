@@ -1,0 +1,10 @@
+@use "variables/variables";
+
+p {
+    color: variables.$color-black;
+}
+
+.provisional {
+    filter: variables.$color-black-svg;
+    height: 11px;
+}
