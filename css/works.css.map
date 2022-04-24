@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"works.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/variables/_variables.scss","../scss/works.scss"],"names":[],"mappings":"AACQ;AAsBR;EACI;EACA;EACA;EACA;;;AAGJ;EACI;;;AC7BJ;EACI,ODKU;;;ACFd;EACI,QDUc;ECTd","file":"works.css"}
