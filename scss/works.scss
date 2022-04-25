@@ -15,14 +15,22 @@ p {
 .footer {
     background-color: variables.$color-black;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
+
+.footer__main {
+    // display: flex;
+    // justify-content: space-around;
+    // flex-direction: row;
+}
+
 .footer__header-icon {
     filter: variables.$color-green-svg;
-    height: 10px;
-    padding-bottom: 30px;
+    height: 7px;
+    padding-bottom: 40px;
     // TODO: Spacing between characters
 }
+
 .footer__menu {
     display: none;
     padding-bottom: 30px;
@@ -51,6 +59,9 @@ p {
     font-size: 1.1rem;
     letter-spacing: 0.3rem;
     padding-bottom: 25px;
+}
+.footer__menu-title--icons {
+    padding-bottom: 5px;
 }
 
 .footer__menu-links {
@@ -86,8 +97,7 @@ p {
 }
 
 .footer__section--icons {
-    padding-bottom: 45px;
-    padding-top: 15px;
+    // width: 300px;
 }
 
 .icon--facebook {
@@ -101,7 +111,20 @@ p {
 }
 
 @media (max-width: variables.$breakpoint) {
+    .footer {
+        display: block;
+    }
+
+    .footer-main {
+        flex-direction: column;
+    }
+
     .footer__menu {
         display: block;
+    }
+
+    .footer__section--icons {
+        padding-bottom: 45px;
+        padding-top: 15px;
     }
 }

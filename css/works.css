@@ -22,13 +22,13 @@ p {
 .footer {
   background-color: #080d14;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .footer__header-icon {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
-  height: 10px;
-  padding-bottom: 30px;
+  height: 7px;
+  padding-bottom: 40px;
 }
 
 .footer__menu {
@@ -60,6 +60,10 @@ p {
   font-size: 1.1rem;
   letter-spacing: 0.3rem;
   padding-bottom: 25px;
+}
+
+.footer__menu-title--icons {
+  padding-bottom: 5px;
 }
 
 .footer__menu-links {
@@ -94,11 +98,6 @@ p {
   padding-bottom: 30px;
 }
 
-.footer__section--icons {
-  padding-bottom: 45px;
-  padding-top: 15px;
-}
-
 .icon--facebook {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
 }
@@ -112,8 +111,21 @@ p {
 }
 
 @media (max-width: 600px) {
+  .footer {
+    display: block;
+  }
+
+  .footer-main {
+    flex-direction: column;
+  }
+
   .footer__menu {
     display: block;
+  }
+
+  .footer__section--icons {
+    padding-bottom: 45px;
+    padding-top: 15px;
   }
 }
 
