@@ -22,33 +22,44 @@ p {
 .footer {
   background-color: #080d14;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .footer__header-icon {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
   height: 10px;
+  padding-bottom: 30px;
 }
 
 .footer__menu {
   display: none;
+  padding-bottom: 30px;
 }
 
 .footer__header-title {
   color: #16ffbd;
   font-size: 1.4rem;
   letter-spacing: 0.4rem;
+  padding: 40px 0 20px 0;
+}
+
+.footer__header-title--linethrough {
+  text-decoration: line-through;
+  text-decoration-color: #ff8dac;
 }
 
 .footer__menu-item {
   color: #faedf1;
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
+  line-height: 2.7rem;
 }
 
 .footer__menu-title {
   color: #faedf1;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.3rem;
+  padding-bottom: 25px;
 }
 
 .footer__menu-links {
@@ -56,6 +67,11 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.2rem;
+  padding-bottom: 10px;
+}
+
+.footer__menu-links:hover {
+  color: #ff8dac;
 }
 
 .footer__menu-item:hover,
@@ -70,6 +86,19 @@ p {
   margin: 2%;
 }
 
+.footer__menu-icon:hover {
+  filter: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg) brightness(107%) contrast(101%);
+}
+
+.footer__section {
+  padding-bottom: 30px;
+}
+
+.footer__section--icons {
+  padding-bottom: 45px;
+  padding-top: 15px;
+}
+
 .icon--facebook {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
 }
@@ -80,10 +109,6 @@ p {
 
 .icon--vimeo {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
-}
-
-.footer__menu-icon:hover {
-  filter: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg) brightness(107%) contrast(101%);
 }
 
 @media (max-width: 600px) {

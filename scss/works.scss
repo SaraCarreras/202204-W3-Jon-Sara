@@ -15,32 +15,42 @@ p {
 .footer {
     background-color: variables.$color-black;
     text-align: center;
+    padding-bottom: 50px;
 }
 .footer__header-icon {
     filter: variables.$color-green-svg;
     height: 10px;
+    padding-bottom: 30px;
     // TODO: Spacing between characters
 }
 .footer__menu {
     display: none;
+    padding-bottom: 30px;
 }
 
 .footer__header-title {
     color: variables.$color-green;
     font-size: 1.4rem;
     letter-spacing: 0.4rem;
+    padding: 40px 0 20px 0;
+}
+.footer__header-title--linethrough {
+    text-decoration: line-through;
+    text-decoration-color: variables.$color-pink;
 }
 .footer__menu-item {
     color: variables.$color-white;
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
+    line-height: 2.7rem;
 }
 
 .footer__menu-title {
     color: variables.$color-white;
     // TODO: Move some font styles to variables con Mixins o Extends? - Ask Sara
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.3rem;
+    padding-bottom: 25px;
 }
 
 .footer__menu-links {
@@ -49,6 +59,11 @@ p {
     font-size: 0.85rem;
     // TODO: Move the font spacing to a variable - Ask Sara
     letter-spacing: 0.2rem;
+    padding-bottom: 10px;
+}
+
+.footer__menu-links:hover {
+    color: variables.$color-pink;
 }
 
 .footer__menu-item:hover,
@@ -62,6 +77,19 @@ p {
     height: 40px;
     margin: 2%;
 }
+.footer__menu-icon:hover {
+    filter: variables.$color-pink-svg;
+}
+
+.footer__section {
+    padding-bottom: 30px;
+}
+
+.footer__section--icons {
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+
 .icon--facebook {
     filter: variables.$color-green-svg;
 }
@@ -70,10 +98,6 @@ p {
 }
 .icon--vimeo {
     filter: variables.$color-green-svg;
-}
-
-.footer__menu-icon:hover {
-    filter: variables.$color-pink-svg;
 }
 
 @media (max-width: variables.$breakpoint) {
