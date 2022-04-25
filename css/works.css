@@ -12,6 +12,8 @@ p {
 
 p {
   color: #080d14;
+  color: #16ffbd;
+  z-index: 1;
 }
 
 .provisional {
@@ -23,6 +25,8 @@ p {
   background-color: #080d14;
   text-align: center;
   padding-bottom: 60px;
+  transform: skewY(-10deg);
+  rotate: 10deg;
 }
 
 .footer__header-icon {
@@ -31,7 +35,12 @@ p {
   padding-bottom: 40px;
 }
 
+.footer__group--header {
+  transform: skewY(10deg);
+}
+
 .footer__menu {
+  transform: skewY(10deg);
   display: none;
 }
 
@@ -95,15 +104,36 @@ p {
   filter: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg) brightness(107%) contrast(101%);
 }
 
+.footer__main {
+  transform: skewY(10deg);
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+
 .footer__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
+  width: auto;
+}
+.footer__section.footer__group--left {
+  align-items: flex-start;
+}
+.footer__section.footer__group--rigth {
+  align-items: flex-end;
 }
 
 .footer__section--icons {
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 20px;
 }
 
 .icon--facebook {
@@ -112,6 +142,8 @@ p {
 
 .icon--instagram {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .icon--vimeo {
@@ -123,8 +155,10 @@ p {
     display: block;
   }
 
-  .footer-main {
+  .footer__main {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .footer__menu {
@@ -134,9 +168,19 @@ p {
     padding-bottom: 50px;
   }
 
+  .footer__section {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__section.footer__group--left {
+    align-items: center;
+  }
+  .footer__section.footer__group--rigth {
+    align-items: center;
+  }
+
   .footer__section--icons {
-    padding-bottom: 45px;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
