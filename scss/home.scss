@@ -1,0 +1,48 @@
+@use "variables/variables";
+
+.video-section {
+    background-color: variables.$color-pink;
+}
+
+.video-section {
+    display: grid;
+    place-items: center;
+    background-image: "..PONERIMAGENCAR/";
+}
+.video-section__lorem-subtittle {
+    color: variables.$color-green;
+    letter-spacing: 0.3rem;
+}
+
+.video-section__lorem-subtittle-plain {
+    font-family: variables.$font-oswald;
+    font-weight: 200;
+}
+.video-section__lorem-subtittle-bold {
+    font-family: variables.$font-oswald;
+    font-weight: 500;
+}
+
+.intro-section {
+    background-color: variables.$color-green;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: variables.$font-oswald;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    padding: 0.3rem;
+}
+
+.intro-section__lorem1-tittle {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.intro-section__paragraph {
+    font-size: 0.8rem;
+}
+.intro-section__x-icon {
+    width: 0.5rem;
+}

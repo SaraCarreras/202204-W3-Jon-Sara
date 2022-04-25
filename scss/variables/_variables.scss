@@ -1,0 +1,35 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300;400&display=swap");
+
+$font-oswald: "Oswald", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
+
+// colors: For fonts, backgrounds and svgs
+$color-green: #16ffbd;
+$color-black: #080d14;
+$color-pink: #ff8dac;
+$color-white: #faedf1;
+
+// Svg's fill color property is not working, so needs the filter property with the following values
+$color-green-svg: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg)
+    brightness(101%) contrast(101%);
+
+// FIXME: Review the black color for filtering
+$color-black-svg: invert(3%) sepia(10%) saturate(5642%) hue-rotate(184deg)
+    brightness(106%) contrast(96%);
+
+$color-pink-svg: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg)
+    brightness(107%) contrast(101%);
+
+body {
+    font: 100% $font-oswald;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $color-green;
+}
+
+p {
+    font: 100% $font-open-sans;
+}
