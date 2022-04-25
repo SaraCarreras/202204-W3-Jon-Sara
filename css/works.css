@@ -33,14 +33,13 @@ p {
 
 .footer__menu {
   display: none;
-  padding-bottom: 30px;
 }
 
 .footer__header-title {
   color: #16ffbd;
   font-size: 1.4rem;
   letter-spacing: 0.4rem;
-  padding: 40px 0 20px 0;
+  padding: 80px 0 20px 0;
 }
 
 .footer__header-title--linethrough {
@@ -52,7 +51,8 @@ p {
   color: #faedf1;
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
-  line-height: 2.7rem;
+  line-height: 0.4rem;
+  width: 120px;
 }
 
 .footer__menu-title {
@@ -72,6 +72,7 @@ p {
   font-size: 0.85rem;
   letter-spacing: 0.2rem;
   padding-bottom: 10px;
+  display: inline-block;
 }
 
 .footer__menu-links:hover {
@@ -95,7 +96,14 @@ p {
 }
 
 .footer__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 30px;
+}
+
+.footer__section--icons {
+  display: block;
 }
 
 .icon--facebook {
@@ -120,7 +128,10 @@ p {
   }
 
   .footer__menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
   }
 
   .footer__section--icons {
