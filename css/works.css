@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap");
 body {
   font: 100% "Oswald", sans-serif;
   box-sizing: border-box;
@@ -17,6 +17,79 @@ p {
 .provisional {
   filter: invert(3%) sepia(10%) saturate(5642%) hue-rotate(184deg) brightness(106%) contrast(96%);
   height: 11px;
+}
+
+.footer {
+  background-color: #080d14;
+  text-align: center;
+}
+
+.footer__header-icon {
+  filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
+  height: 10px;
+}
+
+.footer__menu {
+  display: none;
+}
+
+.footer__header-title {
+  color: #16ffbd;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+}
+
+.footer__menu-item {
+  color: #faedf1;
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+}
+
+.footer__menu-title {
+  color: #faedf1;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+
+.footer__menu-links {
+  color: #16ffbd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2rem;
+}
+
+.footer__menu-item:hover,
+.footer__menu-item:active,
+.footer__menu-item:target {
+  color: #ff8dac;
+  text-decoration-line: line-through;
+}
+
+.footer__menu-icon {
+  height: 40px;
+  margin: 2%;
+}
+
+.icon--facebook {
+  filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
+}
+
+.icon--instagram {
+  filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
+}
+
+.icon--vimeo {
+  filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
+}
+
+.footer__menu-icon:hover {
+  filter: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg) brightness(107%) contrast(101%);
+}
+
+@media (max-width: 600px) {
+  .footer__menu {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=works.css.map */

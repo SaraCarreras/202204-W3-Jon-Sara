@@ -1,10 +1,83 @@
 @use "variables/variables";
 
+// TODO: Finish this part, it was a previous experiment
+
+// Start
 p {
     color: variables.$color-black;
 }
-
 .provisional {
     filter: variables.$color-black-svg;
     height: 11px;
+}
+// End
+
+.footer {
+    background-color: variables.$color-black;
+    text-align: center;
+}
+.footer__header-icon {
+    filter: variables.$color-green-svg;
+    height: 10px;
+    // TODO: Spacing between characters
+}
+.footer__menu {
+    display: none;
+}
+
+.footer__header-title {
+    color: variables.$color-green;
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+}
+.footer__menu-item {
+    color: variables.$color-white;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+}
+
+.footer__menu-title {
+    color: variables.$color-white;
+    // TODO: Move some font styles to variables con Mixins o Extends? - Ask Sara
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+}
+
+.footer__menu-links {
+    color: variables.$color-green;
+    font-family: variables.$font-open-sans;
+    font-size: 0.85rem;
+    // TODO: Move the font spacing to a variable - Ask Sara
+    letter-spacing: 0.2rem;
+}
+
+.footer__menu-item:hover,
+.footer__menu-item:active,
+.footer__menu-item:target {
+    color: variables.$color-pink;
+    text-decoration-line: line-through;
+}
+
+.footer__menu-icon {
+    height: 40px;
+    margin: 2%;
+}
+.icon--facebook {
+    filter: variables.$color-green-svg;
+}
+.icon--instagram {
+    filter: variables.$color-green-svg;
+}
+.icon--vimeo {
+    filter: variables.$color-green-svg;
+}
+
+.footer__menu-icon:hover {
+    filter: variables.$color-pink-svg;
+}
+
+@media (max-width: variables.$breakpoint) {
+    .footer__menu {
+        display: block;
+    }
 }
