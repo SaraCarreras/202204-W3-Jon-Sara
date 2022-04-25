@@ -17,10 +17,12 @@
 
 2. Planificación del trabajo
 
-    1. Home Versión mobile / Header - Footer
+    - **Domingo**: Montar sass, seudocódigo, organización
 
-        1. Header / Sara
-        2. Footer / Jon
+    1. Home Versión mobile
+
+        1. Header y main INDEX / Sara
+        2. Footer WORKS / Jon
 
     2. Preparación de todo el proyecto
         1. Html pages
@@ -141,3 +143,7 @@ $color-pink
   @include theme($theme: DarkGreen);
 }
 ```
+
+### Problemas con el footer y los links que el hover se comporta mal
+
+-   Resuelto con ayuda de J.Mora.

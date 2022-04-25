@@ -1,10 +1,132 @@
 @use "variables/variables";
 
+// TODO: Add local variables for repeatitive code
+
+// TODO: Finish this part, it was a previous experiment
+
+// Start
 p {
     color: variables.$color-black;
 }
-
 .provisional {
     filter: variables.$color-black-svg;
     height: 11px;
+}
+// End
+
+.footer {
+    background-color: variables.$color-black;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.footer__header-icon {
+    filter: variables.$color-green-svg;
+    height: 7px;
+    padding-bottom: 40px;
+    // TODO: Spacing between characters
+}
+
+.footer__menu {
+    display: none;
+}
+
+.footer__header-title {
+    color: variables.$color-green;
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    padding: 80px 0 20px 0;
+}
+.footer__header-title--linethrough {
+    text-decoration: line-through;
+    text-decoration-color: variables.$color-pink;
+}
+
+.footer__menu-item {
+    color: variables.$color-white;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    line-height: 0.4rem;
+    width: 120px;
+}
+
+.footer__menu-title {
+    color: variables.$color-white;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 25px;
+}
+.footer__menu-title--icons {
+    padding-bottom: 5px;
+}
+
+.footer__menu-links {
+    color: variables.$color-green;
+    font-family: variables.$font-open-sans;
+    font-size: 0.85rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer__menu-links:hover {
+    color: variables.$color-pink;
+}
+
+.footer__menu-item:hover,
+.footer__menu-item:active,
+.footer__menu-item:target {
+    color: variables.$color-pink;
+    text-decoration-line: line-through;
+}
+
+.footer__menu-icon {
+    height: 40px;
+    margin: 2%;
+}
+.footer__menu-icon:hover {
+    filter: variables.$color-pink-svg;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer__section--icons {
+    display: block;
+}
+
+.icon--facebook {
+    filter: variables.$color-green-svg;
+}
+.icon--instagram {
+    filter: variables.$color-green-svg;
+}
+.icon--vimeo {
+    filter: variables.$color-green-svg;
+}
+
+@media (max-width: variables.$breakpoint) {
+    .footer {
+        display: block;
+    }
+
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .footer__section--icons {
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
 }
