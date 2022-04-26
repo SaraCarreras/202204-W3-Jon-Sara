@@ -10,16 +10,16 @@
     background-size: cover;
     background-position: center;
 }
-.video-section__lorem-subtittle {
+.video-section__lorem-subtitle {
     color: variables.$color-green;
     letter-spacing: 0.3rem;
 }
 
-.video-section__lorem-subtittle-plain {
+.video-section__lorem-subtitle-plain {
     font-family: variables.$font-oswald;
     font-weight: 200;
 }
-.video-section__lorem-subtittle-bold {
+.video-section__lorem-subtitle-bold {
     font-family: variables.$font-oswald;
     font-weight: 500;
 }
@@ -37,7 +37,7 @@
     padding: 0.3rem;
 }
 
-.intro-section__lorem1-tittle {
+.intro-section__lorem1-title {
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -66,24 +66,24 @@
     padding-left: 0.5rem;
 }
 
-.images-section__lorem-tittle {
+.images-section__lorem-title {
 }
 
-.images-section__dolor-subtittle {
+.images-section__dolor-subtitle {
     cursor: pointer;
     font-size: 1rem;
     text-decoration: underline;
 }
 
-.images-section__dolor-subtittle:hover {
+.images-section__dolor-subtitle:hover {
     filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg)
         brightness(1);
     text-decoration: underline;
 }
 
-.images-section__tittle-image1,
-.images-section__tittle-image2,
-.images-section__tittle-image3 {
+.images-section__title-image1,
+.images-section__title-image2,
+.images-section__title-image3 {
     font-family: variables.$font-oswald;
     font-weight: 200;
     letter-spacing: 0.2rem;
