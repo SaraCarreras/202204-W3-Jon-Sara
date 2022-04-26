@@ -4,10 +4,8 @@
 
 // TODO: Finish this part, it was a previous experiment
 // Start
-p {
-  color: variables.$color-black;
-  color: variables.$color-green;
-  z-index: 1;
+body {
+  background-color: variables.$color-green;
 }
 .provisional {
   filter: variables.$color-black-svg;
@@ -15,46 +13,50 @@ p {
 }
 // End
 
-// GALLERY
 .gallery {
-  display: grid !important;
+  display: grid;
   grid-template-rows: 10 1fr;
-}
-
-.gallery__row {
-  display: flex;
-  flex-direction: row;
-}
-
-.gallery__item {
-  width: 50px !important;
-  // width: 50px;
+  // margin: 0;
+  margin-top: 60px;
+  padding-top: 40px;
+  width: 100.5%;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: -1px;
+    transform: skewY(-10deg);
+  }
+  &__item {
+    width: 33.5%;
+    // transform: skewY(-10deg);
+    overflow: hidden;
+    max-height: 300px;
+  }
 }
 
 // FOOTER STYLING
 .footer {
+  position: relative;
+  bottom: 30px;
   background-color: variables.$color-black;
   text-align: center;
   padding-bottom: 60px;
+  padding-top: 20px;
   transform: skewY(-10deg);
   rotate: 10deg;
+  width: 100%;
 }
 
 .footer__header-icon {
   filter: variables.$color-green-svg;
   height: 7px;
-  padding-bottom: 40px;
-  // TODO: Spacing between characters
 }
 
 .footer__group--header {
   transform: skewY(10deg);
 }
 
-.footer__menu {
-  transform: skewY(10deg);
-  display: none;
-}
 .footer__header-title {
   color: variables.$color-green;
   font-size: 1.4rem;
@@ -64,6 +66,10 @@ p {
 .footer__header-title--linethrough {
   text-decoration: line-through;
   text-decoration-color: variables.$color-pink;
+}
+.footer__menu {
+  transform: skewY(10deg);
+  display: none;
 }
 .footer__menu-item {
   color: variables.$color-white;
@@ -148,6 +154,18 @@ p {
 }
 
 @media (max-width: variables.$breakpoint) {
+  .gallery {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      width: 100.5%;
+      transform: skewY(-10deg);
+      margin: -1px;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
   .footer {
     display: block;
   }

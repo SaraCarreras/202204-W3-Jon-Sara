@@ -10,4 +10,8 @@ p {
   font: 100% "Open Sans", sans-serif;
 }
 
+section {
+  display: unset;
+}
+
 /*# sourceMappingURL=index.css.map */
