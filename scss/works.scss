@@ -3,10 +3,11 @@
 // TODO: Add local variables for repeatitive code
 
 // TODO: Finish this part, it was a previous experiment
-
 // Start
 p {
     color: variables.$color-black;
+    color: variables.$color-green;
+    z-index: 1;
 }
 .provisional {
     filter: variables.$color-black-svg;
@@ -18,6 +19,8 @@ p {
     background-color: variables.$color-black;
     text-align: center;
     padding-bottom: 60px;
+    transform: skewY(-10deg);
+    rotate: 10deg;
 }
 
 .footer__header-icon {
@@ -27,10 +30,14 @@ p {
     // TODO: Spacing between characters
 }
 
-.footer__menu {
-    display: none;
+.footer__group--header {
+    transform: skewY(10deg);
 }
 
+.footer__menu {
+    transform: skewY(10deg);
+    display: none;
+}
 .footer__header-title {
     color: variables.$color-green;
     font-size: 1.4rem;
@@ -41,7 +48,6 @@ p {
     text-decoration: line-through;
     text-decoration-color: variables.$color-pink;
 }
-
 .footer__menu-item {
     color: variables.$color-white;
     font-size: 1.4rem;
@@ -49,7 +55,6 @@ p {
     line-height: 0.4rem;
     width: 120px;
 }
-
 .footer__menu-title {
     color: variables.$color-white;
     font-size: 1.1rem;
@@ -59,7 +64,6 @@ p {
 .footer__menu-title--icons {
     padding-bottom: 5px;
 }
-
 .footer__menu-links {
     color: variables.$color-green;
     font-family: variables.$font-open-sans;
@@ -68,18 +72,15 @@ p {
     padding-bottom: 10px;
     display: inline-block;
 }
-
 .footer__menu-links:hover {
     color: variables.$color-pink;
 }
-
 .footer__menu-item:hover,
 .footer__menu-item:active,
 .footer__menu-item:target {
     color: variables.$color-pink;
     text-decoration-line: line-through;
 }
-
 .footer__menu-icon {
     height: 40px;
     margin: 2%;
@@ -87,16 +88,34 @@ p {
 .footer__menu-icon:hover {
     filter: variables.$color-pink-svg;
 }
-
+.footer__main {
+    transform: skewY(10deg);
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+}
 .footer__section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
+    width: auto;
+    &.footer__group--left {
+        align-items: flex-start;
+    }
+    &.footer__group--rigth {
+        align-items: flex-end;
+    }
 }
-
 .footer__section--icons {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
 }
 
 .icon--facebook {
@@ -104,6 +123,8 @@ p {
 }
 .icon--instagram {
     filter: variables.$color-green-svg;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .icon--vimeo {
     filter: variables.$color-green-svg;
@@ -114,8 +135,10 @@ p {
         display: block;
     }
 
-    .footer-main {
+    .footer__main {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .footer__menu {
@@ -124,9 +147,18 @@ p {
         align-items: center;
         padding-bottom: 50px;
     }
+    .footer__section {
+        align-items: center;
+        justify-content: center;
+        &.footer__group--left {
+            align-items: center;
+        }
+        &.footer__group--rigth {
+            align-items: center;
+        }
+    }
 
     .footer__section--icons {
-        padding-bottom: 45px;
-        padding-top: 15px;
+        padding-top: 10px;
     }
 }
