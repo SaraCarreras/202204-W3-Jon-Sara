@@ -1,5 +1,6 @@
 // fonts
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300;400&display=swap");
 
 $font-oswald: "Oswald", sans-serif;
 $font-open-sans: "Open Sans", sans-serif;
@@ -25,10 +26,18 @@ $color-pink-svg: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg)
 $breakpoint: 600px;
 
 body {
+<<<<<<< HEAD
   font: 100% $font-oswald;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+=======
+    font: 100% $font-oswald;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $color-green;
+>>>>>>> main
 }
 
 p {

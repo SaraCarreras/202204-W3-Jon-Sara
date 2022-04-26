@@ -4,7 +4,7 @@
  *    |                          ^
  *    '
  *   scss/variables/_variables.scss 30:26  @use
- *   scss/works.scss 1:1                   root stylesheet */
+ *   scss/home.scss 1:1                    root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 30 \2502    font: 100% $font-oswald;\a    \2502                           ^\a    \2575 \a   scss/variables/_variables.scss 30:26  @use\a   scss/works.scss 1:1                   root stylesheet';
+  content: 'Error: expected "{".\a    \2577 \a 30 \2502    font: 100% $font-oswald;\a    \2502                           ^\a    \2575 \a   scss/variables/_variables.scss 30:26  @use\a   scss/home.scss 1:1                    root stylesheet';
 }

@@ -1,0 +1,97 @@
+@use "variables/variables";
+
+.video-section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background-image: url("/images/media/media03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.video-section__lorem-subtitle {
+    color: variables.$color-green;
+    letter-spacing: 0.3rem;
+}
+
+.video-section__lorem-subtitle-plain {
+    font-family: variables.$font-oswald;
+    font-weight: 200;
+}
+.video-section__lorem-subtitle-bold {
+    font-family: variables.$font-oswald;
+    font-weight: 500;
+}
+
+.intro-section {
+    background-color: variables.$color-green;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: variables.$font-oswald;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    padding: 0.3rem;
+}
+
+.intro-section__lorem1-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.intro-section__paragraph {
+    font-size: 0.8rem;
+}
+.intro-section__x-icon {
+    width: 0.5rem;
+    margin-top: 1rem;
+}
+.images-section__upper-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-section__wave-icon {
+    max-width: 10%;
+    max-height: 10%;
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+}
+
+.images-section__lorem-title {
+}
+
+.images-section__dolor-subtitle {
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.images-section__dolor-subtitle:hover {
+    filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg)
+        brightness(1);
+    text-decoration: underline;
+}
+
+.images-section__title-image1,
+.images-section__title-image2,
+.images-section__title-image3 {
+    font-family: variables.$font-oswald;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    line-height: 0;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}

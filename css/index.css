@@ -1,17 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap");
-body {
-  font: 100% "Oswald", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected "{".
+ *    ,
+ * 30 |   font: 100% $font-oswald;
+ *    |                          ^
+ *    '
+ *   scss/variables/_variables.scss 30:26  @use
+ *   scss/index.scss 1:1                   root stylesheet */
 
-p {
-  font: 100% "Open Sans", sans-serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 30 \2502    font: 100% $font-oswald;\a    \2502                           ^\a    \2575 \a   scss/variables/_variables.scss 30:26  @use\a   scss/index.scss 1:1                   root stylesheet';
 }
-
-section {
-  display: unset;
-}
-
-/*# sourceMappingURL=index.css.map */
