@@ -9,7 +9,7 @@
     - [x] Instalar Husky
         - [ ] Pendiente arreglar el fix de los mensajes de commit. Ver comentario abajo
     - [x] Estructura de páginas inicial
-    - [ ] Instalar SASS
+    - [x] Instalar SASS
         - [ ] Aprender bien la configuración
         - [ ] Comprobar con Sara que a ella le va bien todo
 
@@ -17,10 +17,12 @@
 
 2. Planificación del trabajo
 
-    1. Home Versión mobile / Header - Footer
+    - **Domingo**: Montar sass, seudocódigo, organización
 
-        1. Header / Sara
-        2. Footer / Jon
+    1. Home Versión mobile
+
+        1. Header y main INDEX / Sara
+        2. Footer WORKS / Jon
 
     2. Preparación de todo el proyecto
         1. Html pages
@@ -66,3 +68,82 @@ hint: You can disable this warning with `git config advice.ignoredHook false`.
 <!-- FIXME: Revisar esto. Lo dejo desactivado, pero es cutre. -->
 
 ### Instalación
+
+===
+
+## Pseudocode para el footer
+
+**HTML**
+
+footer
+footer**header
+footer**header-title
+footer\_\_header-icon
+
+    footer__menu
+        footer__menu-item
+        footer__menu-item
+        footer__menu-item
+        footer__menu-item
+
+    footer__section
+        footer__section-title
+        footer__section-links
+        footer__section-links
+
+    footer__section
+        footer__section-title
+        footer__section-links
+        footer__section-links
+
+    footer__section
+        footer__section-title
+        footer__section-icon
+        footer__section-icon
+        footer__section-icon
+
+    footer__section
+        footer__section-title
+        footer__section-links
+        footer__section-links
+        footer__section-links
+
+    footer__section
+        footer__section-title
+        footer__section-links
+        footer__section-links
+        footer__section-links
+
+**SCSS**
+
+<!-- // Usar variables -->
+
+$font-headings
+$font-texts
+$color-green 
+$color-white
+$color-black
+$color-pink
+
+<!-- MIXINS -->
+
+```scss
+@mixin link-styes() {
+  font-family: $font-headings
+  color: #fff;
+}
+
+.info {
+  @include theme;
+}
+.alert {
+  @include theme($theme: DarkRed);
+}
+.success {
+  @include theme($theme: DarkGreen);
+}
+```
+
+### Problemas con el footer y los links que el hover se comporta mal
+
+-   Resuelto con ayuda de J.Mora.

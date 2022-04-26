@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>play-icon-green</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play-icon-green">
+            <path d="M38,76 C16.972332,76 0,58.8774704 0,38 C0,17.1225296 16.972332,0 38,0 C58.8774704,0 76,16.972332 76,38 C76,58.8774704 58.8774704,76 38,76 Z M38,4 C19.2307692,4 4,19.2307692 4,38 C4,56.7692308 19.2307692,72 38,72 C56.7692308,72 72,56.7692308 72,38 C72,19.2307692 56.7692308,4 38,4 Z" id="Shape-Copy" fill="#16FFBD" fill-rule="nonzero"></path>
+            <path d="M35.2,29.4 L45.721097,37.2908227 C46.6047526,37.9535644 46.7838387,39.2071671 46.121097,40.0908227 C45.9821336,40.2761072 45.8120433,40.4358466 45.6184098,40.5629185 L35.0973129,47.4673884 C34.1738399,48.0734176 32.9339333,47.8160785 32.3279042,46.8926055 C32.1139751,46.5666182 32,46.1852071 32,45.7952926 L32,31 C32,29.8954305 32.8954305,29 34,29 C34.4327404,29 34.8538077,29.1403557 35.2,29.4 Z" id="Rectangle" stroke="#16FFBD" stroke-width="3" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

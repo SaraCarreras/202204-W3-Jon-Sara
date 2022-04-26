@@ -22,6 +22,9 @@ $color-black-svg: invert(3%) sepia(10%) saturate(5642%) hue-rotate(184deg)
 $color-pink-svg: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg)
     brightness(107%) contrast(101%);
 
+// Media queries breakpoints
+$breakpoint: 600px;
+
 body {
     font: 100% $font-oswald;
     box-sizing: border-box;
@@ -33,3 +36,7 @@ body {
 p {
     font: 100% $font-open-sans;
 }
+
+// footer {
+//     display: inherit;
+// }
