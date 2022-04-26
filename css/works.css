@@ -30,6 +30,11 @@ body {
   padding-top: 40px;
   width: 100.5%;
 }
+.gallery:hover::before {
+  content: "This is the gallery!!!!";
+  color: red;
+  overflow: visible;
+}
 .gallery__row {
   display: flex;
   flex-direction: row;
@@ -41,6 +46,33 @@ body {
   width: 33.5%;
   overflow: hidden;
   max-height: 300px;
+  position: relative;
+}
+.gallery__item:hover::before {
+  content: "This is the item!!!!";
+  color: red;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.item-info__text {
+  color: #faedf1;
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 25px;
+}
+.item-info__text-footer {
+  color: #080d14;
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 25px;
+}
+.item-info__text:hover::after {
+  content: "HEY";
+  color: red;
 }
 
 .footer {
@@ -185,6 +217,9 @@ body {
   }
   .gallery__item {
     width: 100%;
+  }
+  .galleryimg {
+    aspect-ratio: 2/1;
   }
 
   .footer {
