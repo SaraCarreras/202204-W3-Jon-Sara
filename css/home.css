@@ -13,13 +13,14 @@ p {
 }
 
 .video-section {
-  background-color: #ff8dac;
-}
-
-.video-section {
+  width: 100%;
   display: grid;
   place-items: center;
-  background-image: "..PONERIMAGENCAR/";
+  padding: 2rem;
+  background-image: url("/images/media/media03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .video-section__lorem-subtittle {
@@ -39,6 +40,7 @@ p {
 
 .intro-section {
   background-color: #16ffbd;
+  width: 100%;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -52,6 +54,7 @@ p {
 .intro-section__lorem1-tittle {
   font-size: 1.5rem;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .intro-section__paragraph {
@@ -60,6 +63,48 @@ p {
 
 .intro-section__x-icon {
   width: 0.5rem;
+  margin-top: 1rem;
+}
+
+.images-section__upper-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-section__wave-icon {
+  max-width: 10%;
+  max-height: 10%;
+  display: flex;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+}
+
+.images-section__dolor-subtittle {
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.images-section__dolor-subtittle:hover {
+  filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg) brightness(1);
+  text-decoration: underline;
+}
+
+.images-section__tittle-image1,
+.images-section__tittle-image2,
+.images-section__tittle-image3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 4rem;
 }
 
 /*# sourceMappingURL=home.css.map */
