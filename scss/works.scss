@@ -15,11 +15,23 @@ p {
 }
 // End
 
+// GALLERY
+.gallery {
+  display: grid !important;
+  grid-template-rows: 10 1fr;
+}
+
 .gallery__row {
-  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery__item {
+  width: 50px !important;
   // width: 50px;
 }
 
+// FOOTER STYLING
 .footer {
   background-color: variables.$color-black;
   text-align: center;
