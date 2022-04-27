@@ -67,12 +67,15 @@
 }
 
 .images-section__lorem-title {
+    letter-spacing: 0.3rem;
+    font-weight: 400;
 }
 
 .images-section__dolor-subtitle {
     cursor: pointer;
     font-size: 1rem;
     text-decoration: underline;
+    font-weight: 400;
 }
 
 .images-section__dolor-subtitle:hover {
