@@ -1,7 +1,56 @@
 @use "variables/variables";
 
-.video-section {
+.body {
+    width: auto;
+    margin: 0%;
+}
+.header {
+    height: 10rem;
+    width: auto;
+}
+.main {
+    width: auto;
+}
+.desktop-nav {
+    display: none;
+}
+
+.mobile-nav {
+    width: auto;
+}
+
+.mobile-nav__BC {
     width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem;
+}
+
+.mobile-nav__BC__burguermenu {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem;
+}
+
+.mobile-nav___BC__currentpage {
+    max-height: 1.6rem;
+    max-width: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 1.3rem;
+    letter-spacing: 0.2rem;
+}
+
+.mobile-nav__panic-logo {
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-section {
+    width: auto;
     display: grid;
     place-items: center;
     padding: 2rem;
@@ -87,13 +136,18 @@
 .images-section__title-image1,
 .images-section__title-image2,
 .images-section__title-image3 {
+    object-fit: cover;
+}
+
+.images-section__title-image1,
+.images-section__title-image2,
+.images-section__title-image3 {
     font-family: variables.$font-oswald;
     font-weight: 200;
     letter-spacing: 0.2rem;
     text-align: center;
     line-height: 0;
     display: flex;
-
     justify-content: center;
     flex-direction: column;
     padding-bottom: 4rem;
