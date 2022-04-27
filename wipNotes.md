@@ -178,3 +178,7 @@ DAILY SARA:
 - Mobile home
 - Quiere acabar el home, tiene desde el vídeo hasta la crucecita.
 - Cuando tenga hecha la mobile-home hacemos PR
+
+- JAVIER: CONSEJO
+  - añadir un enlace en las imágenes, porque es así como sería
+  - con eso será más fácil poner el contenido.

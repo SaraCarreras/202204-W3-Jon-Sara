@@ -26,18 +26,11 @@ $color-pink-svg: invert(87%) sepia(32%) saturate(5757%) hue-rotate(297deg)
 $breakpoint: 600px;
 
 body {
-<<<<<<< HEAD
   font: 100% $font-oswald;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-=======
-    font: 100% $font-oswald;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: $color-green;
->>>>>>> main
+  background-color: $color-green;
 }
 
 p {
