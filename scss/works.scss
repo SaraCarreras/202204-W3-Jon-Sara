@@ -1,94 +1,209 @@
 @use "variables/variables";
 
-// TODO: Add local variables for repeatitive code
+// TODO: Check if we can add more global variables for repeatitive code
 
-// TODO: Finish this part, it was a previous experiment
 // Start
-p {
-    color: variables.$color-black;
-    color: variables.$color-green;
-    z-index: 1;
+body {
+  background-color: variables.$color-green;
 }
-.provisional {
-    filter: variables.$color-black-svg;
-    height: 11px;
+
+a {
+  text-decoration: none;
 }
+
 // End
 
-.footer {
-    background-color: variables.$color-black;
-    text-align: center;
-    padding-bottom: 60px;
+.gallery {
+  display: grid;
+  grid-template-rows: 10 1fr;
+  margin-top: 60px;
+  padding-top: 40px;
+  width: 100.5%;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 27%;
+    width: 100%;
+    margin: -1px;
     transform: skewY(-10deg);
-    rotate: 10deg;
+  }
+  &__item {
+    width: 33.5%;
+    height: auto;
+    overflow: hidden;
+    max-height: 300px;
+    position: relative;
+  }
+  &__item-img {
+    overflow: visible;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    transform: 0.1s;
+  }
+  &__item-overlay {
+    overflow: hidden;
+    width: 33.4%;
+    height: 100.3%;
+    background-color: #00000099;
+    opacity: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    &:hover {
+      transition: 0.25s;
+      opacity: 100%;
+    }
+
+    & .overlay__icon {
+      padding-top: 10%;
+      height: 100px;
+      height: 30px;
+      width: 30px;
+      filter: variables.$color-green-svg;
+      transform: skewY(10deg);
+    }
+    & .overlay__text {
+      padding-top: 10px;
+      display: block;
+      color: variables.$color-white;
+      font-family: variables.$font-open-sans;
+      font-size: 0.85rem;
+      font-weight: lighter;
+      letter-spacing: 0.1rem;
+      transform: skewY(10deg);
+    }
+    & .overlay__footer {
+      padding-top: 7px;
+      display: block;
+      color: variables.$color-green;
+      font-family: variables.$font-open-sans;
+      font-size: 0.65rem;
+      font-weight: lighter;
+      letter-spacing: 0.05rem;
+      transform: skewY(10deg);
+    }
+  }
+  &__item-img:hover {
+    transition: 0.25s;
+    transform: scale(1.05);
+  }
 }
 
-.footer__header-icon {
-    filter: variables.$color-green-svg;
-    height: 7px;
-    padding-bottom: 40px;
-    // TODO: Spacing between characters
-}
-
-.footer__group--header {
-    transform: skewY(10deg);
-}
-
-.footer__menu {
-    transform: skewY(10deg);
-    display: none;
-}
-.footer__header-title {
-    color: variables.$color-green;
-    font-size: 1.4rem;
-    letter-spacing: 0.4rem;
-    padding: 80px 0 20px 0;
-}
-.footer__header-title--linethrough {
-    text-decoration: line-through;
-    text-decoration-color: variables.$color-pink;
-}
-.footer__menu-item {
-    color: variables.$color-white;
-    font-size: 1.4rem;
-    letter-spacing: 0.3rem;
-    line-height: 0.4rem;
-    width: 120px;
-}
-.footer__menu-title {
+.item-info {
+  &__text {
     color: variables.$color-white;
     font-size: 1.1rem;
     letter-spacing: 0.3rem;
     padding-bottom: 25px;
+  }
+  &__text-footer {
+    // color: variables.$color-green;
+    color: variables.$color-black;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 25px;
+  }
+  &__text:hover::after {
+    content: "HEY";
+    color: red;
+  }
 }
-.footer__menu-title--icons {
-    padding-bottom: 5px;
-}
-.footer__menu-links {
+
+.footer {
+  position: relative;
+  bottom: 30px;
+  background-color: variables.$color-black;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  transform: skewY(-10deg);
+  rotate: 10deg;
+  width: 100%;
+
+  &__header-icon {
+    filter: variables.$color-green-svg;
+    height: 7px;
+  }
+
+  &__group--header {
+    transform: skewY(10deg);
+  }
+
+  &__header-title {
     color: variables.$color-green;
-    font-family: variables.$font-open-sans;
-    font-size: 0.85rem;
-    letter-spacing: 0.2rem;
-    padding-bottom: 10px;
-    display: inline-block;
-}
-.footer__menu-links:hover {
-    color: variables.$color-pink;
-}
-.footer__menu-item:hover,
-.footer__menu-item:active,
-.footer__menu-item:target {
-    color: variables.$color-pink;
-    text-decoration-line: line-through;
-}
-.footer__menu-icon {
-    height: 40px;
-    margin: 2%;
-}
-.footer__menu-icon:hover {
-    filter: variables.$color-pink-svg;
-}
-.footer__main {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    padding: 80px 0 20px 0;
+
+    &--linethrough {
+      text-decoration: line-through;
+      text-decoration-color: variables.$color-pink;
+    }
+  }
+
+  &__menu {
+    transform: skewY(10deg);
+    display: none;
+
+    &-item {
+      color: variables.$color-white;
+      font-size: 1.4rem;
+      letter-spacing: 0.3rem;
+      line-height: 0.4rem;
+      width: 120px;
+    }
+
+    &-title {
+      color: variables.$color-white;
+      font-size: 1.1rem;
+      letter-spacing: 0.3rem;
+      padding-bottom: 25px;
+
+      &--icons {
+        padding-bottom: 5px;
+      }
+    }
+
+    &-links {
+      color: variables.$color-green;
+      font-family: variables.$font-open-sans;
+      font-size: 0.85rem;
+      letter-spacing: 0.2rem;
+      padding-bottom: 10px;
+      display: inline-block;
+
+      &:hover {
+        color: variables.$color-pink;
+      }
+    }
+
+    &-item:hover,
+    :active,
+    :target {
+      color: variables.$color-pink;
+      text-decoration-line: line-through;
+    }
+
+    &-icon {
+      height: 40px;
+      margin: 2%;
+
+      &:hover {
+        filter: variables.$color-pink-svg;
+      }
+    }
+  }
+
+  &__main {
     transform: skewY(10deg);
     padding-bottom: 5%;
     padding-left: 5%;
@@ -97,68 +212,96 @@ p {
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 100px;
-}
-.footer__section {
+  }
+
+  &__section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
     width: auto;
+
     &.footer__group--left {
-        align-items: flex-start;
+      align-items: flex-start;
     }
     &.footer__group--rigth {
-        align-items: flex-end;
+      align-items: flex-end;
     }
-}
-.footer__section--icons {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 20px;
+
+    &--icons {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding-top: 20px;
+    }
+  }
 }
 
-.icon--facebook {
+.icon {
+  &--facebook {
     filter: variables.$color-green-svg;
-}
-.icon--instagram {
+  }
+  &--instagram {
     filter: variables.$color-green-svg;
     padding-left: 20px;
     padding-right: 20px;
-}
-.icon--vimeo {
+  }
+  &--vimeo {
     filter: variables.$color-green-svg;
+  }
 }
 
 @media (max-width: variables.$breakpoint) {
-    .footer {
-        display: block;
+  .gallery {
+    &__row {
+      display: grid;
+      height: auto;
+      grid-template-columns: 1 1fr;
+      width: 100.5%;
+      transform: skewY(-10deg);
+      margin: -1px;
+    }
+    &__item {
+      width: 100%;
+    }
+    &img {
+      aspect-ratio: 2/1;
+    }
+    &__item-overlay {
+      width: 100%;
+      height: 33.39%;
+      overflow: hidden;
+    }
+  }
+
+  .footer {
+    display: block;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .footer__main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
     }
 
-    .footer__menu {
-        display: flex;
-        flex-direction: column;
+    &__section {
+      align-items: center;
+      justify-content: center;
+      &.footer__group--left {
         align-items: center;
-        padding-bottom: 50px;
-    }
-    .footer__section {
+      }
+      &.footer__group--rigth {
         align-items: center;
-        justify-content: center;
-        &.footer__group--left {
-            align-items: center;
-        }
-        &.footer__group--rigth {
-            align-items: center;
-        }
-    }
-
-    .footer__section--icons {
+      }
+      &--icons {
         padding-top: 10px;
+      }
     }
+  }
 }
