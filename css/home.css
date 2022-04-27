@@ -41,12 +41,14 @@ p {
   flex-direction: row;
   justify-content: space-between;
   margin: 0rem;
+  cursor: pointer;
 }
 
 .mobile-nav__BC__burguermenu {
   width: 1.5rem;
   height: 1.5rem;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .mobile-nav___BC__currentpage {
@@ -55,6 +57,15 @@ p {
   margin-top: 1.5rem;
   margin-right: 1.3rem;
   letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav__BC__burguermenu:hover {
+  filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg) brightness(1);
+}
+
+.mobile-nav___BC__currentpage:hover {
+  filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg) brightness(1);
 }
 
 .mobile-nav__panic-logo {
@@ -100,17 +111,20 @@ p {
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   letter-spacing: 0.3rem;
-  padding: 0.3rem;
+  margin: 1rem;
 }
 
 .intro-section__lorem1-title {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   margin-bottom: 1rem;
+  width: 70%;
 }
 
 .intro-section__paragraph {
   font-size: 0.8rem;
+  padding-right: 1.9rem;
+  width: 90%;
 }
 
 .intro-section__x-icon {
@@ -135,15 +149,17 @@ p {
 }
 
 .images-section__lorem-title {
-  letter-spacing: 0.3rem;
-  font-weight: 400;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
 }
 
 .images-section__dolor-subtitle {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-decoration: underline;
-  font-weight: 400;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1.8rem;
 }
 
 .images-section__dolor-subtitle:hover {
