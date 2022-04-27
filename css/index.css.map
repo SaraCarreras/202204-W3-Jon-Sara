@@ -1,10 +1,1 @@
-{
-  "version": 3,
-  "sourceRoot": "",
-  "sources": [
-    "../scss/variables/_variables.scss"
-  ],
-  "names": [],
-  "mappings": "AACQ;AACA;AAyBR;EACI;EACA;EACA;EACA;EACA,kBAxBU;;;AA2Bd;EACI",
-  "file": "index.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/variables/_variables.scss"],"names":[],"mappings":"AACQ;AACA;AAyBR;EACE;EACA;EACA;EACA;EACA,kBAxBY;;;AA2Bd;EACE;;;AAGF;EACE","file":"index.css"}
