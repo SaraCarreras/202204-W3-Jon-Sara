@@ -13,6 +13,65 @@ a {
 
 // End
 
+//header
+
+.header {
+  height: 10rem;
+  width: auto;
+}
+.main {
+  width: auto;
+}
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  width: auto;
+}
+
+.mobile-nav__BC {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0rem;
+  cursor: pointer;
+}
+
+.mobile-nav__BC__burguermenu {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.mobile-nav___BC__currentpage {
+  max-height: 1.6rem;
+  max-width: 2rem;
+  margin-top: 1.5rem;
+  margin-right: 1.3rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav__BC__burguermenu:hover {
+  filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg) brightness(1);
+}
+.mobile-nav___BC__currentpage:hover {
+  filter: invert(0.27) sepia(1) saturate(20) hue-rotate(298.8deg) brightness(1);
+}
+
+.mobile-nav__panic-logo {
+  height: 4.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+//header
+
 .gallery {
   display: grid;
   grid-template-rows: 10 1fr;
